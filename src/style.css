@@ -60,30 +60,31 @@ nav {
 /* Hero Section */
 .hero {
   position: relative;
-  width: 100%;
-  height: 60vh;
-  overflow: hidden;
+  width: 95vw;        
+  height: 80vh;       /* smaller: 60% of viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;    
+  margin: 0;
 }
 
 .hero-banner {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills container, crops if needed */
   z-index: 1;
 }
 
 .hero-content {
-  position: relative;
+  position: relative;  /* overlay on top */
   z-index: 2;
   text-align: center;
   color: #fff;
-  padding: 0 16px;
+  padding: 16px;
 }
 
 .hero-content h1 {
@@ -95,6 +96,8 @@ nav {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.85);
 }
+
+
 
 /* Sections */
 .section {
@@ -121,7 +124,7 @@ nav {
 
 .about-image {
   flex: 0 0 auto;          /* prevents container from stretching */
-  max-width: 180px;        /* constrain container */
+  max-width: 300px;        /* constrain container */
   text-align: center;
 }
 
