@@ -8,7 +8,6 @@ const images: string[] = [
   '/Portfolio/BowlMonster.png',
   '/Portfolio/Lich.png',
   '/Portfolio/Oculus.png',
-  '/Portfolio/PushBot.gif',
   '/Portfolio/CircleOfCampfire.png',
   '/Portfolio/HorseGirl.png',
   '/Portfolio/Artificer.png',
@@ -18,8 +17,9 @@ const images: string[] = [
   '/Portfolio/Cornifer.png',
   '/Portfolio/Sherma.png',
   '/Portfolio/Hornet.png',
-  '/Portfolio/Knight.png'
-
+  '/Portfolio/Knight.png',
+  '/Portfolio/pkmnDrag.png',
+  '/Portfolio/PkmnElec.png',
 ];
 
 const galleryGrid = document.getElementById('galleryGrid');
