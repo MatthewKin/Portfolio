@@ -1,3 +1,4 @@
+import './style.css';
 const button = document.getElementById("contactBtn") as HTMLButtonElement;
 const contactSection = document.getElementById("contact");
 
@@ -8,8 +9,8 @@ button.addEventListener("click", () => {
 // Projects example
 type Project = { title: string; description: string };
 const projects: Project[] = [
-  { title: "Between the Tides of Time", description: "Farming resource game with timeline mechanics." },
-  { title: "Reality & Rowan", description: "Narrative game exploring memory and alternate timelines." }
+  { title: "Luminara (4th Overall)", description: "Fun & Engagement #3 | Theme #5 Overall #4 | Presentation #5 Luminara is a puzzle-platformer where you guide light through the night sky by placing stars to form constellations. These celestial patterns become traversable paths allowing you to overcome obstacles and solve environmental puzzles" },
+  { title: "DeadWired", description: "aaaaa" }
 ];
 
 const projectList = document.getElementById("projectList");
