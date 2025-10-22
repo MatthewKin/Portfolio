@@ -44,12 +44,13 @@ nav {
 /* Hero Section */
 .hero {
   position: relative;
-  width: 95vw;        
-  height: 80vh;       
+  width: 180vh;
+  height: 90vh;               /* adjust height as needed */
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;    
+  justify-content: flex-start; /* left-align text */
+  overflow: hidden;
+  padding-left: 5%;           /* optional padding from left */
   margin: 0;
 }
 
@@ -59,14 +60,15 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;          /* ensures the image covers the section */
+  object-position: center;    /* centers the image */
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  text-align: center;
+  text-align: left;
   color: #fff;
   padding: 16px;
 }
@@ -80,6 +82,8 @@ nav {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.85);
 }
+
+
 
 /* Sections */
 .section {
@@ -207,4 +211,28 @@ h2 {
   font-weight: 700;
   margin-bottom: 24px;
   color: #fff;
+}
+
+/* Contact / Links Section */
+.contact-section {
+  text-align: left;
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.contact-links p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.contact-links a.contact-link {
+  color: #00f2fe;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 16px;
+}
+
+.contact-links a.contact-link:hover {
+  text-decoration: underline;
 }
