@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthew Kin Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <!-- Top Navigation Bar -->
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="art.html">Art</a>
-    </nav>
-  </header>
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+      <img src="/PortfolioBanner.png" alt="Banner image" class="banner-image" />
+      <h1>Matthew Kin</h1>
+      <p>Computer Science Game Designer</p>
+      <button id="contactBtn">Contact Me</button>
+    </section>
 
-  <!-- Banner Section -->
-  <section class="banner">
-    <img src="PortfolioBanner.png" alt="Banner image" class="banner-image">
-    <h1>Matthew Kin</h1>
-    <p>Computer Science Game Designer</p>
-  </section>
+    <!-- Page Content -->
+    <main>
+      <section id="about">
+        <h1>About Me</h1>
+        <p>I'm a Computer Science Game Design student at UCSC. I have a passion for creating engaging and immersive gaming experiences. My skills include programming, game mechanics design, and user experience optimization. I'm always looking to collaborate on exciting projects and expand my portfolio.</p>
+      </section>
 
-  <!-- Page Content -->
-  <main>
-    <h1>About Me</h1>
-    <p>I'm a Computer Science Game Design student at UCSC. I have a passion for creating engaging and immersive gaming experiences. My skills include programming, game mechanics design, and user experience optimization. I'm always looking to collaborate on exciting projects and expand my portfolio.</p>
-  </main>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="projectList"></div>
+      </section>
 
-</body>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+          <label>Name <input type="text" name="name" required /></label>
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Message <textarea name="message" required></textarea></label>
+          <button type="submit">Send</button>
+        </form>
+        <p id="formStatus"></p>
+      </section>
+    </main>
+
+    <!-- Vite will automatically include your TS/JS here -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
