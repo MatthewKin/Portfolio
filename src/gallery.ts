@@ -5,9 +5,11 @@ const images: string[] = [
   '/Portfolio/WayPoint.gif',
   '/Portfolio/Ceryth.gif',
   '/Portfolio/Lena.gif',
+  '/Portfolio/LichIdle.gif',
+  '/Portfolio/RelayHusk.gif',
   '/Portfolio/BowlMonster.png',
-  '/Portfolio/Lich.png',
   '/Portfolio/Oculus.png',
+  '/Portfolio/slimeanimationtest.gif',
   '/Portfolio/CircleOfCampfire.png',
   '/Portfolio/HorseGirl.png',
   '/Portfolio/Artificer.png',
@@ -20,6 +22,9 @@ const images: string[] = [
   '/Portfolio/Knight.png',
   '/Portfolio/pkmnDrag.png',
   '/Portfolio/PkmnElec.png',
+  '/Portfolio/Kuze.png',
+  '/Portfolio/rusTV.png',
+  '/Portfolio/Etan.png'
 ];
 
 const galleryGrid = document.getElementById('galleryGrid');
