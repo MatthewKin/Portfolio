@@ -15,7 +15,7 @@ type Project = {
   images?: string[];
   link?: string;
 };
-
+// project list here
 const projects: Project[] = [
   { 
     title: "Luminara (4th Overall)", 
