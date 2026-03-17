@@ -2,11 +2,13 @@ import './style.css';
 
 // Array of gallery images
 const images: string[] = [
-  '/Portfolio/WayPoint.gif',
   '/Portfolio/Ceryth.gif',
-  '/Portfolio/Lena.gif',
+  '/Portfolio/WayPoint.gif',
   '/Portfolio/LichIdle.gif',
-  '/Portfolio/RelayHusk.gif',
+  '/Portfolio/FlyerEnemyIdle.gif',
+  '/Portfolio/RithvikMushroom.gif',
+  '/Portfolio/Lena.gif',
+  '/Portfolio/clown.png',
   '/Portfolio/BowlMonster.png',
   '/Portfolio/Oculus.png',
   '/Portfolio/slimeanimationtest.gif',
@@ -23,8 +25,7 @@ const images: string[] = [
   '/Portfolio/pkmnDrag.png',
   '/Portfolio/PkmnElec.png',
   '/Portfolio/Kuze.png',
-  '/Portfolio/rusTV.png',
-  '/Portfolio/Etan.png'
+  '/Portfolio/rusTV.png'
 ];
 
 const galleryGrid = document.getElementById('galleryGrid');
