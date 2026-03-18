@@ -2,11 +2,11 @@ import './style.css';
 
 // Array of gallery images
 const images: string[] = [
+  '/Portfolio/Orc.gif',
   '/Portfolio/Ceryth.gif',
-  '/Portfolio/WayPoint.gif',
   '/Portfolio/LichIdle.gif',
   '/Portfolio/FlyerEnemyIdle.gif',
-  '/Portfolio/RithvikMushroom.gif',
+  '/Portfolio/WayPoint.gif',
   '/Portfolio/Lena.gif',
   '/Portfolio/clown.png',
   '/Portfolio/BowlMonster.png',
