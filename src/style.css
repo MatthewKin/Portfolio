@@ -6,6 +6,7 @@ body {
   color: #f0f0f0;
   background-color: #121212;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Navigation */
@@ -44,13 +45,13 @@ nav {
 /* Hero Section */
 .hero {
   position: relative;
-  width: 180vh;
-  height: 90vh;               /* adjust height as needed */
+  width: 100%;
+  height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* left-align text */
+  justify-content: flex-start;
   overflow: hidden;
-  padding-left: 5%;           /* optional padding from left */
+  padding-left: 5%;
   margin: 0;
 }
 
@@ -60,8 +61,8 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;          /* ensures the image covers the section */
-  object-position: center;    /* centers the image */
+  object-fit: cover;
+  object-position: center;
   z-index: 1;
 }
 
@@ -82,8 +83,6 @@ nav {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.85);
 }
-
-
 
 /* Sections */
 .section {
@@ -117,6 +116,7 @@ nav {
 .about-image img {
   width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
@@ -135,6 +135,14 @@ nav {
   .about-image {
     max-width: 120px;
   }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
 }
 
 /* Projects Section */
@@ -143,7 +151,7 @@ nav {
   margin-top: 40px;
 }
 
-/* Projects Grid - stacked vertically */
+/* Projects Grid */
 .projects-grid {
   display: flex;
   flex-direction: column;
@@ -190,6 +198,24 @@ nav {
   text-decoration: underline;
 }
 
+/* Project Images */
+.project-image {
+  width: 100%;
+  max-width: 700px;
+  max-height: 400px;
+  height: auto;
+
+  object-fit: contain;
+  object-position: center;
+
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 16px;
+
+  background-color: #111;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
 /* Multiple images container */
 .project-images {
   display: flex;
@@ -199,9 +225,13 @@ nav {
 }
 
 .project-images img {
-  max-width: 280px;
   width: 100%;
+  max-width: 500px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 8px;
+  background-color: #111;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
@@ -261,16 +291,25 @@ h2 {
   margin-bottom: 24px;
 }
 
+/* Gallery Grid */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
   padding: 0 24px;
 }
 
-.gallery-grid img {
+.gallery-grid img,
+#galleryPage .gallery-item {
   width: 100%;
+  height: auto;
+
+  object-fit: contain;
+  object-position: center;
+
+  background-color: #181818;
   border-radius: 8px;
+
   image-rendering: pixelated;
   transition: transform 0.2s ease;
 }
@@ -296,7 +335,7 @@ h2 {
 
 /* Gallery Page Styles Scoped */
 #galleryPage {
-  background-color: #201f1f; /* lighter dark */
+  background-color: #201f1f;
   color: #f0f0f0;
   font-family: 'Montserrat', sans-serif;
   min-height: 80vh;
@@ -305,7 +344,7 @@ h2 {
 }
 
 #galleryPage header {
-  background-color: #1f1f1f; /* slightly darker than page */
+  background-color: #1f1f1f;
 }
 
 #galleryPage nav .nav-links a {
@@ -319,7 +358,7 @@ h2 {
 /* Gallery Grid */
 #galleryPage #galleryGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
   padding: 40px;
 }
@@ -327,6 +366,9 @@ h2 {
 /* Individual gallery items */
 #galleryPage .gallery-item {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: #181818;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -338,7 +380,8 @@ h2 {
 }
 
 /* Page Heading */
-#galleryPage h1, #galleryPage h2 {
+#galleryPage h1,
+#galleryPage h2 {
   text-align: center;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -359,7 +402,7 @@ h2 {
 
 .back-button-container {
   text-align: center;
-  margin-bottom: 24px; /* spacing from gallery title or top */
+  margin-bottom: 24px;
 }
 
 .button-link {
