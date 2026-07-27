@@ -12,6 +12,9 @@ const images: string[] = [
   '/Portfolio/BowlMonster.png',
   '/Portfolio/Oculus.png',
   '/Portfolio/slimeanimationtest.gif',
+  '/Portfolio/Monster1.gif',
+  '/Portfolio/Monster2.gif',
+  '/Portfolio/melissadnd.gif',
   '/Portfolio/CircleOfCampfire.png',
   '/Portfolio/HorseGirl.png',
   '/Portfolio/Artificer.png',
@@ -22,9 +25,10 @@ const images: string[] = [
   '/Portfolio/Sherma.png',
   '/Portfolio/Hornet.png',
   '/Portfolio/Knight.png',
+  '/Portfolio/Grimm.png',
+  '/Portfolio/pkmnGrass.png',
   '/Portfolio/pkmnDrag.png',
   '/Portfolio/PkmnElec.png',
-  '/Portfolio/Kuze.png',
   '/Portfolio/rusTV.png'
 ];
 
