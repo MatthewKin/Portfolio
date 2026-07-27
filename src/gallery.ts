@@ -15,6 +15,8 @@ const images: string[] = [
   '/Portfolio/Monster1.gif',
   '/Portfolio/Monster2.gif',
   '/Portfolio/melissadnd.gif',
+  '/Portfolio/Cael.gif',
+  '/Portfolio/yubaba.gif',
   '/Portfolio/CircleOfCampfire.png',
   '/Portfolio/HorseGirl.png',
   '/Portfolio/Artificer.png',
