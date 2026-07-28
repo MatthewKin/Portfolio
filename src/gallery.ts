@@ -1,46 +1,61 @@
+// Import global CSS for Vite to bundle
 import './style.css';
+
+
+// GitHub Pages compatible base path
+const basePath = import.meta.env.BASE_URL;
+
 
 // Array of gallery images
 const images: string[] = [
-  '/Portfolio/Orc.gif',
-  '/Portfolio/Ceryth.gif',
-  '/Portfolio/LichIdle.gif',
-  '/Portfolio/FlyerEnemyIdle.gif',
-  '/Portfolio/WayPoint.gif',
-  '/Portfolio/Lena.gif',
-  '/Portfolio/clown.png',
-  '/Portfolio/BowlMonster.png',
-  '/Portfolio/Oculus.png',
-  '/Portfolio/slimeanimationtest.gif',
-  '/Portfolio/Monster1.gif',
-  '/Portfolio/Monster2.gif',
-  '/Portfolio/melissadnd.gif',
-  '/Portfolio/Cael.gif',
-  '/Portfolio/yubaba.gif',
-  '/Portfolio/CircleOfCampfire.png',
-  '/Portfolio/HorseGirl.png',
-  '/Portfolio/Artificer.png',
-  '/Portfolio/TurtleMonk.png',
-  '/Portfolio/AstralMage.png',
-  '/Portfolio/CrowMagic.png',
-  '/Portfolio/Cornifer.png',
-  '/Portfolio/Sherma.png',
-  '/Portfolio/Hornet.png',
-  '/Portfolio/Knight.png',
-  '/Portfolio/Grimm.png',
-  '/Portfolio/pkmnGrass.png',
-  '/Portfolio/pkmnDrag.png',
-  '/Portfolio/PkmnElec.png',
-  '/Portfolio/rusTV.png'
+  'Orc.gif',
+  'Ceryth.gif',
+  'LichIdle.gif',
+  'FlyerEnemyIdle.gif',
+  'WayPoint.gif',
+  'Lena.gif',
+  'clown.png',
+  'BowlMonster.png',
+  'Oculus.png',
+  'slimeanimationtest.gif',
+  'Monster1.gif',
+  'Monster2.gif',
+  'melissadnd.gif',
+  'Cael.gif',
+  'yubaba.gif',
+  'CircleOfCampfire.png',
+  'HorseGirl.png',
+  'Artificer.png',
+  'TurtleMonk.png',
+  'AstralMage.png',
+  'CrowMagic.png',
+  'Cornifer.png',
+  'Sherma.png',
+  'Hornet.png',
+  'Knight.png',
+  'Grimm.png',
+  'pkmnGrass.png',
+  'pkmnDrag.png',
+  'PkmnElec.png',
+  'rusTV.png'
 ];
+
 
 const galleryGrid = document.getElementById('galleryGrid');
 
-images.forEach(src => {
-  const img = document.createElement('img');
-  img.src = src;
-  img.alt = 'Pixel Art';
-  img.className = 'gallery-item';
-  galleryGrid?.appendChild(img);
-});
 
+if (galleryGrid) {
+  images.forEach(image => {
+
+    const img = document.createElement('img');
+
+    img.src = `${basePath}${image}`;
+
+    img.alt = 'Pixel Art';
+
+    img.className = 'gallery-item';
+
+    galleryGrid.appendChild(img);
+
+  });
+}

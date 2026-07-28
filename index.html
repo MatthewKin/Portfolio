@@ -3,397 +3,568 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Matthew Kin Portfolio</title>
 
   <link rel="icon" type="image/png" href="rusTV.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <style>
-    /* --- Modal styles --- */
-    .modal {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.9);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      animation: fadeIn 0.3s ease;
-    }
-
-    .modal-content {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #luminara-frame {
-      width: 95vw;
-      height: 90vh;
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    }
-
-    .close-button {
-      position: absolute;
-      top: 16px;
-      right: 24px;
-      font-size: 2.5rem;
-      color: white;
-      background: none;
-      border: none;
-      cursor: pointer;
-      z-index: 10000;
-    }
-
-    .close-button:hover {
-      color: #ff8080;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" 
+    rel="stylesheet"
+  />
 </head>
 
 <body>
-  <!-- Navigation -->
-  <header>
-    <nav>
-      <div class="logo">MK</div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="gallery.html">Gallery</a>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Hero Banner -->
-  <section id="home" class="hero">
-    <img src="PortfolioBanner.png" alt="Banner image" class="hero-banner" />
-    <div class="hero-content">
-      <h1>Matthew Kin</h1>
-      <p>Computer Science Game Designer</p>
+<header>
+  <nav>
+    <div class="logo">MK</div>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="gallery.html">Gallery</a>
     </div>
-  </section>
-
-  <!-- About Me -->
-  <section id="about" class="section about-section">
-    <div class="about-container">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I'm a Computer Science Game Design student at UCSC, passionate about creating engaging and immersive gaming experiences.
-          My skills include programming, game mechanics design, and user experience optimization. I enjoy collaborating on exciting projects and expanding my portfolio.
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="face.png" alt="Matthew Kin" />
-      </div>
-    </div>
-  </section>
-
-    <!-- Resume -->
-  <section id="resume" class="section resume-section">
-    <h2>Resume</h2>
-
-    <div class="resume-container">
-      <iframe
-        src="MatthewKinResume.pdf"
-        class="resume-frame"
-        title="Matthew Kin Resume">
-      </iframe>
-
-      <div class="resume-buttons">
-        <a href="MatthewKinResume.pdf" target="_blank" class="resume-button">
-          Open Resume
-        </a>
-
-        <a href="MatthewKinResume.pdf" download class="resume-button">
-          Download Resume
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-<section id="projects" class="section projects-section">
-  <h2>Projects</h2>
-
-  <div class="projects-grid">
-
-    <!-- HYPERWAVE DRIVE -->
-    <div class="project-card">
-
-      <div class="project-media">
-        <img src="hyperwave1.png" alt="Hyperwave Screenshot" class="project-image" />
-
-        <div class="video-container">
-          <iframe
-            class="project-video"
-            src="https://www.youtube.com/embed/zNDSqdRlq94"
-            title="HyperWave Drive Gameplay"
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-
-      <h3>HyperWave Drive - MashUp Game Jam 2025</h3>
-
-      <p>
-        Pilot your hyperwave transport, dodge incoming hazards, shoot enemies,
-        and navigate a chaotic vaporwave cityscape.
-      </p>
-
-      <p>
-        <strong>Mashup Game Jam 2025 Results:</strong><br />
-        Art #4 | Overall #9 | Design #11 | Sound #11 | Fun #12 | Originality #18
-      </p>
-
-      <p>Solo designed and developed in under 7 days using Unity and C#.</p>
-
-      <a
-        href="https://itch.io/jam/mashup-game-jam-2025/rate/4002010"
-        target="_blank"
-        class="project-link">
-        Play on Itch.io
-      </a>
-
-      <p>By rusTVz for MashUp Jam</p>
-    </div>
-
-    <!-- LUMINARA -->
-    <div class="project-card">
-
-      <div class="project-media">
-        <img src="luminara1.png" alt="Luminara Screenshot" class="project-image" />
-
-        <div class="video-container">
-          <iframe
-            class="project-video"
-            src="https://www.youtube.com/embed/Pqt-Xc3L1qs"
-            title="Luminara Gameplay"
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-
-      <h3>Luminara - UNI Game Jam 2025 (4th Overall)</h3>
-
-      <p>
-        Luminara is a puzzle-platformer where you guide light through the night sky
-        by placing stars to form constellations.
-      </p>
-
-      <p>
-        <strong>UNI Game Jam 2025 Results:</strong><br />
-        Fun & Engagement #3 | Theme #5 | Overall #4 | Presentation #5
-      </p>
-
-      <p>Solo designed and developed in under 7 days using Unity and C#.</p>
-
-      <a
-        href="https://itch.io/jam/california-uni-summer-game-jam/rate/3746145"
-        target="_blank"
-        class="project-link">
-        Play on Itch.io
-      </a>
-
-      <p>By rusTVz for Uni Jam</p>
-    </div>
-
-    <!-- NOW YOU SEE IT -->
-    <div class="project-card">
-
-      <div class="project-media">
-        <img src="nowyouseeit1.png" alt="Now You See It Screenshot" class="project-image" />
-        <img src="nowyouseeit2.png" alt="Now You See It Screenshot" class="project-image" />
-      </div>
-
-      <h3>Now You See It - Zot Jam 2026</h3>
-
-      <p>
-        NOW YOU SEE IT is a memory card game where you must locate hidden Jokers
-        to survive the clownhouse.
-      </p>
-
-      <p>
-        <strong>Zot Jam 2026 Results:</strong><br />
-        Ambience #4 | Theme Relevance #6 | Overall #7 |
-        Fun & Engagement #10 | Creativity #26
-      </p>
-
-      <p>Solo designed and developed in under 24 hours using Unity and C#.</p>
-
-      <a
-        href="https://rustvz.itch.io/now-you-see-it"
-        target="_blank"
-        class="project-link">
-        Play on Itch.io
-      </a>
-
-      <p>By rusTVz for Zot Jam</p>
-    </div>
+  </nav>
+</header>
 
 
-    <!-- DEADWIRED -->
-    <div class="project-card">
+<!-- Hero -->
+<section id="home" class="hero">
 
-      <div class="project-media">
+  <img 
+    src="PortfolioBanner.png" 
+    alt="Portfolio Banner"
+    class="hero-banner"
+  />
 
-        <img src="deadwired1.png" alt="DeadWired Screenshot" class="project-image" />
-
-        <img src="deadwired2.png" alt="DeadWired Screenshot" class="project-image" />
-
-        <div class="video-container">
-          <iframe
-            class="project-video"
-            src="https://www.youtube.com/embed/vX3PKXOJksU"
-            title="DeadWired Gameplay"
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-      </div>
-
-      <h3>DeadWired - Pixel Game Jam 2025</h3>
-
-      <p>
-        DEADWIRED is a pixel-art action-puzzler made for Pixel Game Jam 2025.
-        You play as L1CH, a reconstructed mind guided by AI ARIS through a
-        decaying cyber-future.
-      </p>
-
-      <p>
-        <strong>Pixel Game Jam 2025 Results:</strong><br />
-        Innovation: 21/429 | Overall: 27/429 | Pixel Art: 58/429
-      </p>
-
-      <p>Solo designed and developed in under 10 days using Unity and C#.</p>
-
-      <a
-        href="https://rustvz.itch.io/deadwired"
-        target="_blank"
-        class="project-link">
-        Play on Itch.io
-      </a>
-
-      <p>By rusTVz for Pixel Game Jam</p>
-    </div>
-
-
-    <!-- ECHOS OF THE ANCIENT -->
-    <div class="project-card">
-
-      <div class="project-media">
-
-        <img src="echoes1.png" alt="Echos Of The Ancient Screenshot" class="project-image" />
-
-        <div class="video-container">
-          <iframe
-            class="project-video"
-            src="https://www.youtube.com/embed/hwCHIi0r5mo"
-            title="Echos Of The Ancient Gameplay"
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-      </div>
-
-      <h3>Echos Of The Ancient - UniJam Summer 2026</h3>
-
-      <p>
-        Echos Of The Ancient is a puzzle adventure where players record and replay
-        echoes of their past actions to solve environmental puzzles.
-      </p>
-
-      <p>
-        <strong>UniJam Summer 2026 Results:</strong><br />
-        Fun & Entertainment #3 |
-        Theme Relevance #5 |
-        Overall #5 |
-        Aesthetic #9
-      </p>
-
-      <p>Solo designed and developed in under 7 days using Unity and C#.</p>
-
-      <a
-        href="https://itch.io/jam/unijam-summer-2026/rate/4780114"
-        target="_blank"
-        class="project-link">
-        Play on Itch.io
-      </a>
-
-      <p>By rusTVz for UniJam Summer 2026</p>
-
-    </div>
-
+  <div class="hero-content">
+    <h1>Matthew Kin</h1>
+    <p>Computer Science Game Designer</p>
   </div>
+
 </section>
 
-  
-  <!--Gallery  -->
-  <section id="projects" class="section projects-section">
-    <h2>Pixel Art Gallery</h2>
-    <div class="gallery-button-container">
-      <a href="gallery.html" class="gallery-button">View Pixel Art Gallery</a>
-    </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section contact-section">
-    <h2>Contact & Links</h2>
-    <div class="contact-links">
-      <a href="resume.pdf" target="_blank">Resume</a> |
-      <a href="https://rustvz.itch.io/" target="_blank">Itch.io</a> |
-      <a href="mailto:mattkin101@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/matthew-kin/" target="_blank">LinkedIn</a>
-    </div>
-  </section>
 
-  <!-- Luminara Modal -->
-  <div id="luminara-modal" class="modal">
-    <div class="modal-content">
-      <button id="close-luminara" class="close-button">×</button>
-      <iframe id="luminara-frame" src=""></iframe>
+<!-- About -->
+<section id="about" class="section about-section">
+
+  <div class="about-container">
+
+    <div class="about-text">
+
+      <h2>About Me</h2>
+
+      <p>
+        I'm a Computer Science Game Design student at UCSC, passionate about
+        creating engaging and immersive gaming experiences.
+        My skills include programming, game mechanics design, and user
+        experience optimization.
+      </p>
+
     </div>
+
+
+    <div class="about-image">
+
+      <img 
+        src="face.png"
+        alt="Matthew Kin"
+      />
+
+    </div>
+
   </div>
 
-  <script type="module" src="/src/main.ts"></script>
+</section>
 
-  <script type="module">
-    const playBtn = document.getElementById("play-luminara");
-    const modal = document.getElementById("luminara-modal");
-    const closeBtn = document.getElementById("close-luminara");
-    const frame = document.getElementById("luminara-frame");
 
-    playBtn?.addEventListener("click", () => {
-      modal.style.display = "flex";
-      frame.src = "/Portfolio/LuminaraV3/index.html";
-    });
 
-    closeBtn?.addEventListener("click", () => {
-      modal.style.display = "none";
-      frame.src = ""; // stop and free resources
-    });
+<!-- Resume -->
+<section id="resume" class="section resume-section">
 
-    modal?.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
-        frame.src = "";
-      }
-    });
-  </script>
+<h2>Resume</h2>
+
+<div class="resume-container">
+
+  <iframe
+    src="MatthewKinResume.pdf"
+    class="resume-frame"
+    title="Matthew Kin Resume">
+  </iframe>
+
+
+  <div class="resume-buttons">
+
+    <a 
+      href="MatthewKinResume.pdf"
+      target="_blank"
+      class="resume-button">
+      Open Resume
+    </a>
+
+
+    <a 
+      href="MatthewKinResume.pdf"
+      download
+      class="resume-button">
+      Download Resume
+    </a>
+
+  </div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Projects -->
+<section id="projects" class="section projects-section">
+
+<h2>Projects</h2>
+
+
+<div class="projects-grid">
+
+
+<!-- HYPERWAVE -->
+
+<div class="project-card">
+
+<div class="project-media">
+
+<img src="hyperwave1.png"
+class="project-image"
+alt="HyperWave Screenshot">
+
+
+<div class="video-container">
+
+<iframe
+class="project-video"
+src="https://www.youtube.com/embed/zNDSqdRlq94"
+title="HyperWave Drive Gameplay"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+
+<h3>
+HyperWave Drive - MashUp Game Jam 2025
+</h3>
+
+
+<p>
+Pilot your hyperwave transport, dodge hazards,
+shoot enemies, and navigate a chaotic vaporwave cityscape.
+</p>
+
+
+<p>
+<strong>Mashup Game Jam Results:</strong><br>
+Art #4 | Overall #9 | Design #11 |
+Sound #11 | Fun #12 | Originality #18
+</p>
+
+
+<p>
+<strong>What I Learned:</strong><br>
+This project improved my understanding of fast-paced gameplay systems,
+vehicle controls, and creating engaging feedback through visual effects
+and movement.
+</p>
+
+
+<p>
+Solo designed and developed in under 7 days using Unity and C#.
+</p>
+
+
+<a 
+href="https://itch.io/jam/mashup-game-jam-2025/rate/4002010"
+target="_blank"
+class="project-link">
+Play on Itch.io
+</a>
+
+
+<p>By rusTVz for MashUp Jam</p>
+
+
+</div>
+
+
+
+
+
+<!-- LUMINARA -->
+
+<div class="project-card">
+
+
+<div class="project-media">
+
+
+<img 
+src="luminara1.png"
+class="project-image"
+alt="Luminara Screenshot">
+
+
+<div class="video-container">
+
+<iframe
+class="project-video"
+src="https://www.youtube.com/embed/Pqt-Xc3L1qs"
+title="Luminara Gameplay"
+allowfullscreen>
+</iframe>
+
+
+</div>
+
+</div>
+
+
+<h3>
+Luminara - UNI Game Jam 2025 (4th Overall)
+</h3>
+
+
+<p>
+Luminara is a puzzle-platformer where players guide light through
+the night sky by placing stars to form constellations.
+</p>
+
+
+<p>
+<strong>UNI Game Jam Results:</strong><br>
+Fun & Engagement #3 |
+Theme #5 |
+Overall #4 |
+Presentation #5
+</p>
+
+
+<p>
+<strong>What I Learned:</strong><br>
+This project taught me how to rapidly prototype puzzle mechanics,
+balance player progression, and create a complete game experience
+under a strict time limit.
+</p>
+
+
+<p>
+Solo designed and developed in under 7 days using Unity and C#.
+</p>
+
+
+<a 
+href="https://itch.io/jam/california-uni-summer-game-jam/rate/3746145"
+target="_blank"
+class="project-link">
+Play on Itch.io
+</a>
+
+
+<p>By rusTVz for Uni Jam</p>
+
+
+</div>
+
+
+
+
+
+
+<!-- NOW YOU SEE IT -->
+
+<div class="project-card">
+
+
+<div class="project-media">
+
+<img src="nowyouseeit1.png"
+class="project-image"
+alt="Now You See It">
+
+
+<img src="nowyouseeit2.png"
+class="project-image"
+alt="Now You See It">
+
+</div>
+
+
+
+<h3>
+Now You See It - Zot Jam 2026
+</h3>
+
+
+<p>
+A memory card game where players locate hidden Jokers
+to survive the clownhouse.
+</p>
+
+
+<p>
+<strong>Zot Jam Results:</strong><br>
+Ambience #4 |
+Theme Relevance #6 |
+Overall #7 |
+Fun #10 |
+Creativity #26
+</p>
+
+
+<p>
+<strong>What I Learned:</strong><br>
+This project helped me explore rapid game design,
+player psychology, and creating tension through simple mechanics.
+</p>
+
+
+<p>
+Solo designed and developed in under 24 hours using Unity and C#.
+</p>
+
+
+<a
+href="https://rustvz.itch.io/now-you-see-it"
+target="_blank"
+class="project-link">
+Play on Itch.io
+</a>
+
+
+<p>
+By rusTVz for Zot Jam
+</p>
+
+
+</div>
+
+
+
+
+
+<!-- DEADWIRED -->
+
+<div class="project-card">
+
+
+<div class="project-media">
+
+
+<img src="deadwired1.png"
+class="project-image"
+alt="DeadWired Screenshot">
+
+
+<img src="deadwired2.png"
+class="project-image"
+alt="DeadWired Screenshot">
+
+
+<div class="video-container">
+
+<iframe
+class="project-video"
+src="https://www.youtube.com/embed/vX3PKXOJksU"
+title="DeadWired Gameplay"
+allowfullscreen>
+</iframe>
+
+</div>
+
+
+</div>
+
+
+<h3>
+DeadWired - Pixel Game Jam 2025
+</h3>
+
+
+<p>
+DEADWIRED is a pixel-art action puzzler where L1CH,
+a reconstructed mind, is guided through a decaying cyber future.
+</p>
+
+
+<p>
+<strong>Pixel Game Jam Results:</strong><br>
+Innovation: 21/429 |
+Overall: 27/429 |
+Pixel Art: 58/429
+</p>
+
+
+<p>
+<strong>What I Learned:</strong><br>
+This project strengthened my skills in narrative design,
+pixel-art presentation, and building mechanics around a strong theme.
+</p>
+
+
+<p>
+Solo designed and developed in under 10 days using Unity and C#.
+</p>
+
+
+<a
+href="https://rustvz.itch.io/deadwired"
+target="_blank"
+class="project-link">
+Play on Itch.io
+</a>
+
+
+<p>
+By rusTVz for Pixel Game Jam
+</p>
+
+
+</div>
+
+
+
+
+
+<!-- ECHOES -->
+
+<div class="project-card">
+
+
+<div class="project-media">
+
+
+<img src="echoes1.png"
+class="project-image"
+alt="Echoes Of The Ancient">
+
+
+<div class="video-container">
+
+<iframe
+class="project-video"
+src="https://www.youtube.com/embed/hwCHIi0r5mo"
+title="Echoes Of The Ancient Gameplay"
+allowfullscreen>
+</iframe>
+
+</div>
+
+
+</div>
+
+
+<h3>
+Echoes Of The Ancient - UniJam Summer 2026
+</h3>
+
+
+<p>
+A puzzle adventure where players record and replay echoes
+of their past actions to solve environmental puzzles.
+</p>
+
+
+<p>
+<strong>UniJam Results:</strong><br>
+Fun & Entertainment #3 |
+Theme Relevance #5 |
+Overall #5 |
+Aesthetic #9
+</p>
+
+
+<p>
+<strong>What I Learned:</strong><br>
+This project taught me advanced gameplay scripting,
+time-based systems, and designing mechanics that require
+players to think creatively.
+</p>
+
+
+<p>
+Solo designed and developed in under 7 days using Unity and C#.
+</p>
+
+
+<a
+href="https://itch.io/jam/unijam-summer-2026/rate/4780114"
+target="_blank"
+class="project-link">
+Play on Itch.io
+</a>
+
+
+<p>
+By rusTVz for UniJam Summer 2026
+</p>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- Gallery -->
+
+<section id="gallery" class="section gallery-section">
+
+<h2>Pixel Art Gallery</h2>
+
+<div class="gallery-button-container">
+
+<a 
+href="gallery.html"
+class="gallery-button">
+View Pixel Art Gallery
+</a>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Contact -->
+
+<section id="contact" class="section contact-section">
+
+<h2>Contact & Links</h2>
+
+<div class="contact-links">
+
+<a href="resume.pdf">Resume</a> |
+<a href="https://rustvz.itch.io/">Itch.io</a> |
+<a href="mailto:mattkin101@gmail.com">Email</a> |
+<a href="https://www.linkedin.com/in/matthew-kin/">LinkedIn</a>
+
+</div>
+
+</section>
+
+
+
+
+<script type="module" src="/src/main.ts"></script>
+
 </body>
 </html>

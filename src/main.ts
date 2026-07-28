@@ -1,53 +1,82 @@
 // Import global CSS for Vite to bundle
 import './style.css';
 
-const button = document.getElementById("contactBtn") as HTMLButtonElement;
-const contactSection = document.getElementById("contact");
 
-button?.addEventListener("click", () => {
-  contactSection?.scrollIntoView({ behavior: "smooth" });
-});
+// Smooth scroll helper
+function setupSmoothScroll() {
+  const links = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
 
-// Projects example
-type Project = { 
-  title: string; 
-  description: string; 
-  images?: string[];
-  link?: string;
-};
-// project list here
-const projects: Project[] = [
-  { 
-    title: "Luminara (4th Overall)", 
-    description: "Fun & Engagement #3 | Theme #5 Overall #4 | Presentation #5 Luminara is a puzzle-platformer where you guide light through the night sky by placing stars to form constellations. These celestial patterns become traversable paths allowing you to overcome obstacles and solve environmental puzzles",
-    images: ["/luminara1.png", "/luminara2.png"],
-    link: "https://itch.io/jam/california-uni-summer-game-jam/rate/3746145"
-  },
-  { 
-    title: "DeadWired", 
-    description: "DEADWIRED is a pixel-art action-puzzler made for Pixel Game Jam 2025. Play as L1CH, a reconstructed mind in a mechanical skeleton, guided by the AI ARIS through a decaying, cyber-future. Use ReFracture Cards to manipulate your surroundings, bypass obstacles, and uncover fragments of your forgotten identity.",
-    images: ["/deadwired1.png", "/deadwired2.png"],
-    link: "https://itch.io/jam/-pixel-game-jam-2025/rate/3573528"
-  }
-];
+  links.forEach(link => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
 
-const projectList = document.getElementById("projectList");
+      if (!targetId || targetId === "#") return;
 
-projects.forEach(p => {
-  const card = document.createElement("div");
-  card.className = "project-card";
+      const target = document.querySelector(targetId);
 
-  let imagesHTML = "";
-  if (p.images) {
-    imagesHTML = `<div class="project-images">${p.images.map(img => `<img src="${img}" alt="${p.title} Screenshot">`).join('')}</div>`;
-  }
+      if (target) {
+        event.preventDefault();
 
-  card.innerHTML = `
-    ${imagesHTML}
-    <h3>${p.title}</h3>
-    <p>${p.description}</p>
-    ${p.link ? `<a href="${p.link}" target="_blank" class="project-link">Play ${p.title}</a>` : ""}
-  `;
+        target.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+}
 
-  projectList?.appendChild(card);
-});
+
+// Contact button support (if used later)
+function setupContactButton() {
+  const button = document.getElementById("contactBtn");
+  const contactSection = document.getElementById("contact");
+
+  button?.addEventListener("click", () => {
+    contactSection?.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+}
+
+
+// Luminara modal
+function setupLuminaraModal() {
+  const modal = document.getElementById("luminara-modal");
+  const closeBtn = document.getElementById("close-luminara");
+  const frame = document.getElementById("luminara-frame") as HTMLIFrameElement;
+
+  const playBtn = document.getElementById("play-luminara");
+
+  playBtn?.addEventListener("click", () => {
+    if (!modal || !frame) return;
+
+    modal.style.display = "flex";
+
+    frame.src = `${import.meta.env.BASE_URL}LuminaraV3/index.html`;
+  });
+
+
+  closeBtn?.addEventListener("click", () => {
+    if (!modal || !frame) return;
+
+    modal.style.display = "none";
+    frame.src = "";
+  });
+
+
+  modal?.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+
+      if (frame) {
+        frame.src = "";
+      }
+    }
+  });
+}
+
+
+// Initialize
+setupSmoothScroll();
+setupContactButton();
+setupLuminaraModal();

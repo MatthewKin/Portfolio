@@ -2,7 +2,9 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
+  // GitHub Pages repository path
   base: '/Portfolio/',
+
   build: {
     rollupOptions: {
       input: {
