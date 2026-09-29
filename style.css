@@ -8,7 +8,7 @@
    GLOBAL
    ========================================================= */
 
-   * {
+* {
     box-sizing: border-box;
 }
 
@@ -2940,13 +2940,6 @@ footer {
     }
 
 
-    .project-page-text p,
-    .project-overview-text {
-        font-size:
-            15px;
-    }
-
-
     .project-info-grid {
         grid-template-columns:
             1fr 1fr;
@@ -3069,52 +3062,39 @@ footer {
 
 }
 
+
 /* =========================================================
    MOBILE RESPONSIVE OVERRIDES
    ========================================================= */
 
-
-/* =========================================================
-   TABLET / SMALL LAPTOP
-   ========================================================= */
-
-   @media (max-width: 900px) {
-
-    /* -----------------------------------------
-       GLOBAL
-       ----------------------------------------- */
+@media (max-width: 900px) {
 
     body {
         overflow-x: hidden;
     }
 
 
-    /* -----------------------------------------
-       HEADER
-       ----------------------------------------- */
-
     .site-header {
         height: 60px;
         padding: 0 22px;
     }
 
+
     .site-logo {
         font-size: 16px;
     }
 
+
     .site-nav {
         gap: 14px;
     }
+
 
     .site-nav a {
         font-size: 8px;
         letter-spacing: 0.7px;
     }
 
-
-    /* -----------------------------------------
-       HOME
-       ----------------------------------------- */
 
     .interactive-home {
         min-height: 600px;
@@ -3161,18 +3141,16 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       GENERAL SECTIONS
-       ----------------------------------------- */
-
     .section {
         padding: 85px 6%;
         min-height: auto;
     }
 
+
     .section-container {
         width: 100%;
     }
+
 
     .section h2 {
         margin-bottom: 32px;
@@ -3180,105 +3158,99 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       ABOUT
-       ----------------------------------------- */
-
     .about-content {
         grid-template-columns: 160px 1fr;
         gap: 30px;
         padding: 25px;
     }
 
+
     .about-image {
         width: 160px;
         height: 160px;
     }
 
+
     .about-text {
         font-size: 14px;
     }
+
 
     .about-text p:first-of-type {
         font-size: 16px;
     }
 
 
-    /* -----------------------------------------
-       PROJECTS
-       ----------------------------------------- */
-
     .projects-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 20px;
     }
 
+
     .project-content {
         padding: 18px;
     }
+
 
     .project-content h3 {
         font-size: 18px;
     }
 
 
-    /* -----------------------------------------
-       RESUME
-       ----------------------------------------- */
-
     .resume-container {
         width: 100%;
     }
+
 
     .resume-frame {
         height: 700px;
     }
 
 
-    /* -----------------------------------------
-       CONTACT
-       ----------------------------------------- */
-
     .contact-links {
         gap: 8px;
     }
+
 
     .contact-links a {
         padding: 10px 13px;
     }
 
 
-    /* -----------------------------------------
-       PROJECT PAGE
-       ----------------------------------------- */
-
     .project-page-hero {
         padding: 125px 6% 65px;
     }
+
 
     .project-page-section {
         padding: 80px 6%;
     }
 
+
     .project-page-hero h1 {
         font-size: clamp(40px, 7vw, 60px);
     }
+
 
     .project-page-section h2 {
         font-size: clamp(34px, 7vw, 50px);
     }
 
+
     .project-results {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
 
     .project-info-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+
     .project-screenshot-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
 
     .development-gallery {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3292,27 +3264,21 @@ footer {
 
 @media (max-width: 600px) {
 
-    /* -----------------------------------------
-       GLOBAL
-       ----------------------------------------- */
-
     html {
         scroll-padding-top: 65px;
     }
+
 
     body {
         font-size: 14px;
     }
 
 
-    /* -----------------------------------------
-       HEADER
-       ----------------------------------------- */
-
     .site-header {
         height: 58px;
         padding: 0 14px;
     }
+
 
     .site-logo {
         font-size: 14px;
@@ -3320,9 +3286,11 @@ footer {
         white-space: nowrap;
     }
 
+
     .site-nav {
         gap: 8px;
     }
+
 
     .site-nav a {
         font-size: 7px;
@@ -3331,39 +3299,19 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       HOME
-       ----------------------------------------- */
-
     .interactive-home {
         min-height: 600px;
         height: 100svh;
-
-        /*
-         * Give the menu more vertical breathing room
-         * underneath the fixed header.
-         */
         padding-top: 40px;
     }
 
 
-    /*
-     * Make the 3D head smaller so it doesn't
-     * compete with the menu buttons.
-     */
-
     .head-container {
         width: 58vw;
         height: 48vh;
-
         top: 50%;
     }
 
-
-    /*
-     * Turn the large desktop wheel into a smaller
-     * phone-friendly wheel.
-     */
 
     .circle-menu {
         width: 94vw;
@@ -3382,14 +3330,11 @@ footer {
     }
 
 
-    /*
-     * Bring the side buttons inward.
-     */
-
     .menu-button[data-direction="top-left"],
     .menu-button[data-direction="bottom-left"] {
         left: 12%;
     }
+
 
     .menu-button[data-direction="top-right"],
     .menu-button[data-direction="bottom-right"] {
@@ -3397,24 +3342,15 @@ footer {
     }
 
 
-    /*
-     * Keep the top and bottom buttons
-     * inside the phone viewport.
-     */
-
     .menu-button[data-direction="top"] {
         top: 7%;
     }
+
 
     .menu-button[data-direction="bottom"] {
         top: 93%;
     }
 
-
-    /*
-     * Reduce the visual weight of the
-     * button shadows on small screens.
-     */
 
     .menu-button {
         box-shadow:
@@ -3425,19 +3361,17 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       GENERAL SECTIONS
-       ----------------------------------------- */
-
     .section {
         padding: 65px 5%;
         min-height: auto;
     }
 
+
     .section::before {
         left: 5%;
         width: 55px;
     }
+
 
     .section-label {
         margin-bottom: 10px;
@@ -3445,46 +3379,42 @@ footer {
         letter-spacing: 1.5px;
     }
 
+
     .section h2 {
         margin-bottom: 25px;
-
         font-size: clamp(30px, 10vw, 42px);
         line-height: 1.05;
         letter-spacing: -0.5px;
     }
 
 
-    /* -----------------------------------------
-       ABOUT
-       ----------------------------------------- */
-
     .about-content {
         display: flex;
         flex-direction: column;
-
         gap: 22px;
-
         padding: 20px;
-
         width: 100%;
     }
+
 
     .about-image {
         width: 150px;
         height: 150px;
-
         align-self: center;
     }
+
 
     .about-text {
         font-size: 14px;
         line-height: 1.7;
     }
 
+
     .about-text p:first-of-type {
         font-size: 16px;
         line-height: 1.55;
     }
+
 
     .about-text p {
         margin-bottom: 16px;
@@ -3496,42 +3426,45 @@ footer {
         margin-top: 20px;
     }
 
+
     .about-skill {
         padding: 6px 8px;
         font-size: 8px;
     }
 
 
-    /* -----------------------------------------
-       PROJECTS
-       ----------------------------------------- */
-
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
+
     .project-card {
         width: 100%;
     }
+
 
     .project-content {
         padding: 18px;
     }
 
+
     .project-type {
         font-size: 8px;
     }
+
 
     .project-content h3 {
         font-size: 18px;
         line-height: 1.3;
     }
 
+
     .project-content > p {
         font-size: 11px;
         line-height: 1.65;
     }
+
 
     .project-button {
         min-height: 40px;
@@ -3540,14 +3473,10 @@ footer {
     }
 
 
-    /*
-     * Make expanded project information
-     * easier to read on phones.
-     */
-
     .project-card.expanded .project-details {
         max-height: 700px;
     }
+
 
     .project-details p {
         font-size: 13px;
@@ -3555,29 +3484,23 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       RESUME
-       ----------------------------------------- */
-
     .resume-frame {
         height: 600px;
         width: 100%;
     }
+
 
     .resume-buttons {
         flex-direction: column;
         gap: 10px;
     }
 
+
     .resume-buttons .button {
         width: 100%;
         text-align: center;
     }
 
-
-    /* -----------------------------------------
-       GENERAL BUTTONS
-       ----------------------------------------- */
 
     .button {
         min-height: 42px;
@@ -3592,29 +3515,23 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       PIXEL ART / MUSIC
-       ----------------------------------------- */
-
     .section-description {
         font-size: 14px;
         line-height: 1.7;
     }
 
 
-    /* -----------------------------------------
-       CONTACT
-       ----------------------------------------- */
-
     .contact-section p {
         font-size: 14px;
         line-height: 1.7;
     }
 
+
     .contact-links {
         flex-direction: column;
         gap: 9px;
     }
+
 
     .contact-links a {
         width: 100%;
@@ -3631,10 +3548,6 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       FOOTER
-       ----------------------------------------- */
-
     footer {
         padding: 25px 5%;
         font-size: 8px;
@@ -3647,10 +3560,6 @@ footer {
        ================================================= */
 
 
-    /* -----------------------------------------
-       PROJECT HERO
-       ----------------------------------------- */
-
     .project-page-hero {
         padding:
             100px
@@ -3658,9 +3567,11 @@ footer {
             50px;
     }
 
+
     .project-page-container {
         width: 100%;
     }
+
 
     .project-page-hero h1 {
         font-size: clamp(32px, 10vw, 44px);
@@ -3669,11 +3580,13 @@ footer {
         word-break: normal;
     }
 
+
     .project-page-hero h1::after {
         width: 65px;
         height: 3px;
         margin-top: 16px;
     }
+
 
     .project-page-subtitle {
         margin-top: 18px;
@@ -3682,25 +3595,14 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       PROJECT AWARD
-       ----------------------------------------- */
-
     .project-page-award {
         width: 100%;
-
         margin-top: 18px;
-
         padding: 9px 11px;
-
         font-size: 8px;
         line-height: 1.4;
     }
 
-
-    /* -----------------------------------------
-       PROJECT RESULTS
-       ----------------------------------------- */
 
     .project-results {
         grid-template-columns: 1fr;
@@ -3708,34 +3610,36 @@ footer {
         width: 100%;
     }
 
+
     .project-result {
         padding: 12px;
     }
+
 
     .project-result-rank {
         font-size: 19px;
     }
 
+
     .project-result-category {
         font-size: 7px;
     }
 
+
     .project-result-score {
         font-size: 9px;
     }
+
 
     .project-results-note {
         font-size: 8px;
     }
 
 
-    /* -----------------------------------------
-       PROJECT OVERVIEW
-       ----------------------------------------- */
-
     .project-overview {
         margin-top: 40px;
     }
+
 
     .project-overview-text {
         font-size: 14px;
@@ -3743,73 +3647,68 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       PROJECT VIDEO
-       ----------------------------------------- */
-
     .project-video-wrapper {
         margin-top: 30px;
         border-radius: 3px;
     }
 
+
     .project-video-wrapper::before {
         padding: 6px 8px;
-
         font-size: 6px;
         letter-spacing: 1px;
     }
+
 
     .project-video {
         aspect-ratio: 16 / 9;
     }
 
 
-    /* -----------------------------------------
-       PROJECT INFO
-       ----------------------------------------- */
-
     .project-info-grid {
         grid-template-columns: 1fr;
         gap: 8px;
     }
 
+
     .project-info {
         padding: 13px;
     }
 
+
     .project-info-label {
         font-size: 7px;
     }
+
 
     .project-info-value {
         font-size: 11px;
     }
 
 
-    /* -----------------------------------------
-       PROJECT SECTION
-       ----------------------------------------- */
-
     .project-page-section {
         padding: 65px 5%;
     }
+
 
     .project-page-section::before {
         left: 5%;
         width: 55px;
     }
 
+
     .project-page-section h2 {
         margin-bottom: 25px;
-
         font-size: clamp(30px, 10vw, 42px);
         line-height: 1.05;
         letter-spacing: -0.5px;
     }
 
+
     .project-page-text {
         width: 100%;
     }
+
 
     .project-page-text p {
         font-size: 14px;
@@ -3817,18 +3716,16 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       PROCESS
-       ----------------------------------------- */
-
     .project-process {
         margin-top: 30px;
         padding-left: 22px;
     }
 
+
     .project-process::before {
         left: 4px;
     }
+
 
     .process-step {
         display: block;
@@ -3836,6 +3733,7 @@ footer {
         margin-bottom: 25px;
         padding: 18px;
     }
+
 
     .process-step::before {
         left: -27px;
@@ -3845,17 +3743,19 @@ footer {
         height: 9px;
     }
 
+
     .process-number {
         display: block;
         margin-bottom: 9px;
-
         font-size: 10px;
     }
+
 
     .process-step h3 {
         font-size: 16px;
         line-height: 1.3;
     }
+
 
     .process-step p {
         font-size: 13px;
@@ -3863,36 +3763,26 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       SCREENSHOTS
-       ----------------------------------------- */
-
     .screenshots-label {
         margin-top: 40px;
     }
+
 
     .project-screenshot-grid {
         grid-template-columns: 1fr;
         gap: 12px;
     }
 
+
     .project-screenshot {
         border-radius: 3px;
     }
 
-    /*
-     * On touch devices there is no hover,
-     * so keep the VIEW label visible.
-     */
 
     .project-screenshot::after {
         opacity: 1;
     }
 
-
-    /* -----------------------------------------
-       DEVELOPMENT GALLERY
-       ----------------------------------------- */
 
     .development-gallery {
         grid-template-columns: 1fr;
@@ -3901,14 +3791,11 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       PROJECT TOOLS
-       ----------------------------------------- */
-
     .project-tools {
         gap: 6px;
         margin-top: 22px;
     }
+
 
     .project-tool {
         padding: 6px 8px;
@@ -3916,25 +3803,18 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       PROJECT LINKS
-       ----------------------------------------- */
-
     .project-page-links {
         flex-direction: column;
         gap: 9px;
         margin-top: 28px;
     }
 
+
     .project-page-links .button {
         width: 100%;
         text-align: center;
     }
 
-
-    /* -----------------------------------------
-       PROJECT FOOTER
-       ----------------------------------------- */
 
     .project-page-footer {
         padding: 28px 5%;
@@ -3950,21 +3830,20 @@ footer {
 
 @media (max-width: 380px) {
 
-    /* -----------------------------------------
-       HEADER
-       ----------------------------------------- */
-
     .site-header {
         padding: 0 10px;
     }
+
 
     .site-logo {
         font-size: 12px;
     }
 
+
     .site-nav {
         gap: 6px;
     }
+
 
     .site-nav a {
         font-size: 6px;
@@ -3972,23 +3851,22 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       HOME
-       ----------------------------------------- */
-
     .interactive-home {
         min-height: 560px;
     }
+
 
     .head-container {
         width: 55vw;
         height: 42vh;
     }
 
+
     .circle-menu {
         width: 96vw;
         height: 76vh;
     }
+
 
     .menu-button {
         width: 98px;
@@ -3998,10 +3876,12 @@ footer {
         letter-spacing: 0.3px;
     }
 
+
     .menu-button[data-direction="top-left"],
     .menu-button[data-direction="bottom-left"] {
         left: 10%;
     }
+
 
     .menu-button[data-direction="top-right"],
     .menu-button[data-direction="bottom-right"] {
@@ -4009,43 +3889,40 @@ footer {
     }
 
 
-    /* -----------------------------------------
-       CONTENT
-       ----------------------------------------- */
-
     .section,
     .project-page-section {
         padding-left: 4%;
         padding-right: 4%;
     }
 
+
     .section h2,
     .project-page-section h2 {
         font-size: 29px;
     }
+
 
     .project-page-hero {
         padding-left: 4%;
         padding-right: 4%;
     }
 
+
     .project-page-hero h1 {
         font-size: 31px;
     }
 
+
     .about-content {
         padding: 15px;
     }
+
 
     .about-image {
         width: 130px;
         height: 130px;
     }
 
-
-    /* -----------------------------------------
-       RESUME
-       ----------------------------------------- */
 
     .resume-frame {
         height: 500px;
@@ -4059,32 +3936,31 @@ footer {
 
 @media (hover: none) and (pointer: coarse) {
 
-    /*
-     * Remove desktop hover movement on touchscreens.
-     * This prevents cards/buttons from feeling sticky
-     * after tapping them.
-     */
-
     .project-card:hover {
         transform: none;
     }
+
 
     .project-card:hover .project-thumbnail {
         transform: none;
         filter: none;
     }
 
+
     .button:hover {
         transform: none;
     }
+
 
     .project-button:hover {
         transform: none;
     }
 
+
     .contact-links a:hover {
         transform: none;
     }
+
 
     .project-screenshot:hover img {
         transform: none;
@@ -4092,13 +3968,10 @@ footer {
     }
 
 
-    /*
-     * Keep buttons large enough for fingers.
-     */
-
     .menu-button {
         min-height: 42px;
     }
+
 
     .button,
     .project-button,
@@ -4118,6 +3991,7 @@ footer {
         scroll-behavior: auto;
     }
 
+
     *,
     *::before,
     *::after {
@@ -4127,22 +4001,27 @@ footer {
     }
 }
 
+
 /* =========================================================
    PROJECT SKILLS
-========================================================= */
+   ========================================================= */
 
 .project-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+
     margin-top: 18px;
     margin-bottom: 22px;
+
     position: relative;
     z-index: 1;
 }
 
+
 .project-skills .about-skill {
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
 }
@@ -4150,19 +4029,22 @@ footer {
 
 /* =========================================================
    PROJECT BUTTON
-========================================================= */
+   ========================================================= */
 
 .project-content .project-button {
     display: inline-flex;
+
     position: relative;
+
     z-index: 2;
+
     margin-top: 4px;
 }
 
 
 /* =========================================================
    MOBILE
-========================================================= */
+   ========================================================= */
 
 @media (max-width: 600px) {
 
@@ -4172,15 +4054,16 @@ footer {
         gap: 6px;
     }
 
+
     .project-content .project-button {
         margin-top: 4px;
     }
-
 }
+
 
 /* =========================================================
    MUSIC
-========================================================= */
+   ========================================================= */
 
 .music-section {
     position: relative;
@@ -4189,17 +4072,12 @@ footer {
 
 /* =========================================================
    MUSIC CATEGORY GRID
-========================================================= */
+   ========================================================= */
 
 .music-section .section-container {
     width: 100%;
 }
 
-
-/*
- * Two-column layout on larger screens.
- * Automatically becomes one column on smaller screens.
- */
 
 .music-categories {
     display: grid;
@@ -4220,7 +4098,7 @@ footer {
 
 /* =========================================================
    MUSIC CATEGORY
-========================================================= */
+   ========================================================= */
 
 .music-category {
     width: 100%;
@@ -4250,7 +4128,7 @@ footer {
 
 /* =========================================================
    MUSIC CATEGORY HEADER
-========================================================= */
+   ========================================================= */
 
 .music-category-header {
     display: flex;
@@ -4258,11 +4136,9 @@ footer {
     align-items: center;
     justify-content: space-between;
 
-    gap:
-        12px;
+    gap: 12px;
 
-    padding-bottom:
-        10px;
+    padding-bottom: 10px;
 
     border-bottom:
         1px solid rgba(217,217,210,0.16);
@@ -4270,71 +4146,54 @@ footer {
 
 
 .music-category-label {
-    margin-bottom:
-        4px;
+    margin-bottom: 4px;
 
     color:
         var(--n64-yellow);
 
-    font-size:
-        7px;
+    font-size: 7px;
 
-    font-weight:
-        900;
+    font-weight: 900;
 
-    letter-spacing:
-        1.5px;
+    letter-spacing: 1.5px;
 
-    opacity:
-        0.75;
+    opacity: 0.75;
 }
 
 
 .music-category-header h3 {
-    margin:
-        0;
+    margin: 0;
 
-    color:
-        #E3E3DA;
+    color: #E3E3DA;
 
-    font-size:
-        16px;
+    font-size: 16px;
 
-    font-weight:
-        900;
+    font-weight: 900;
 
-    letter-spacing:
-        0.04em;
+    letter-spacing: 0.04em;
 
-    line-height:
-        1.2;
+    line-height: 1.2;
 
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
 }
 
 
 .music-category-year {
-    flex-shrink:
-        0;
+    flex-shrink: 0;
 
-    color:
-        #8991AD;
+    color: #8991AD;
 
-    font-size:
-        8px;
+    font-size: 8px;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    letter-spacing:
-        1px;
+    letter-spacing: 1px;
 }
 
 
 /* =========================================================
    MUSIC TRACKS
-========================================================= */
+   ========================================================= */
 
 .music-tracks {
     display:
@@ -4353,7 +4212,7 @@ footer {
 
 /* =========================================================
    MUSIC TRACK
-========================================================= */
+   ========================================================= */
 
 .music-track {
     display:
@@ -4415,7 +4274,7 @@ footer {
 
 /* =========================================================
    TRACK INFO
-========================================================= */
+   ========================================================= */
 
 .music-track-info {
     display:
@@ -4536,7 +4395,7 @@ footer {
 
 /* =========================================================
    AUDIO PLAYER
-========================================================= */
+   ========================================================= */
 
 .music-track audio {
     width:
@@ -4555,7 +4414,7 @@ footer {
 
 /* =========================================================
    TABLET / NARROW DESKTOP
-========================================================= */
+   ========================================================= */
 
 @media (max-width: 900px) {
 
@@ -4593,13 +4452,12 @@ footer {
         max-width:
             42%;
     }
-
 }
 
 
 /* =========================================================
    MOBILE — ONE COLUMN
-========================================================= */
+   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -4712,13 +4570,12 @@ footer {
         height:
             30px;
     }
-
 }
 
 
 /* =========================================================
    VERY SMALL PHONES
-========================================================= */
+   ========================================================= */
 
 @media (max-width: 380px) {
 
@@ -4744,25 +4601,22 @@ footer {
         padding:
             8px;
     }
-
 }
+
 
 /* =========================================================
    MUSIC SHOW MORE
-========================================================= */
+   ========================================================= */
 
 .music-hidden {
     display: none;
 }
 
+
 .music-categories.show-all .music-hidden {
     display: block;
 }
 
-
-/* =========================================================
-   SHOW MORE BUTTON
-========================================================= */
 
 .music-show-more {
     display: block;
@@ -4823,10 +4677,6 @@ footer {
 }
 
 
-/* =========================================================
-   MOBILE
-========================================================= */
-
 @media (max-width: 700px) {
 
     .music-show-more {
@@ -4836,25 +4686,31 @@ footer {
 
         font-size: 7px;
     }
-
 }
+
 
 /* =========================================================
    PIXEL ART
    ========================================================= */
 
-   .pixel-art-section {
+.pixel-art-section {
     position: relative;
 }
+
 
 .pixel-art-section .section-container {
     max-width: 1200px;
 }
 
+
 .pixel-art-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
     gap: 28px;
+
     margin-top: 42px;
 }
 
@@ -4865,15 +4721,19 @@ footer {
 
 .pixel-art-card {
     position: relative;
+
     display: block;
 
     overflow: hidden;
 
     background: #11152A;
+
     border: 2px solid #303652;
+
     border-radius: 8px;
 
     color: inherit;
+
     text-decoration: none;
 
     transition:
@@ -4882,26 +4742,32 @@ footer {
         box-shadow 0.2s ease;
 }
 
-.pixel-art-card:hover {
-    transform: translateY(-5px);
 
-    border-color: #7B8FE8;
+.pixel-art-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        #7B8FE8;
 
     box-shadow:
-        0 8px 0 rgba(0, 0, 0, 0.25),
-        0 0 20px rgba(123, 143, 232, 0.15);
+        0 8px 0 rgba(0,0,0,0.25),
+        0 0 20px rgba(123,143,232,0.15);
 }
 
 
 /* =========================================================
-   IMAGE
+   PIXEL ART IMAGE
    ========================================================= */
 
 .pixel-art-image {
     width: 100%;
-    aspect-ratio: 16 / 9;
+
+    aspect-ratio:
+        16 / 9;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -4914,63 +4780,96 @@ footer {
             #0D1020
         );
 
-    border-bottom: 2px solid #303652;
+    border-bottom:
+        2px solid #303652;
 }
+
 
 .pixel-art-image img {
     width: 100%;
     height: 100%;
 
-    object-fit: contain;
+    object-fit:
+        contain;
 
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
+    image-rendering:
+        pixelated;
 
-    transition: transform 0.25s ease;
+    image-rendering:
+        crisp-edges;
+
+    transition:
+        transform 0.25s ease;
 }
 
+
 .pixel-art-card:hover .pixel-art-image img {
-    transform: scale(1.04);
+    transform:
+        scale(1.04);
 }
 
 
 /* =========================================================
-   INFO
+   PIXEL ART INFO
    ========================================================= */
 
 .pixel-art-info {
-    padding: 24px;
+    padding:
+        24px;
 }
+
 
 .pixel-art-type {
-    display: inline-block;
+    display:
+        inline-block;
 
-    margin-bottom: 8px;
+    margin-bottom:
+        8px;
 
-    font-family: monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
+    font-family:
+        monospace;
 
-    color: #8FA2FF;
+    font-size:
+        0.7rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.14em;
+
+    color:
+        #8FA2FF;
 }
+
 
 .pixel-art-info h3 {
-    margin: 0 0 10px;
+    margin:
+        0 0 10px;
 
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size:
+        1.4rem;
 
-    color: #E7E8E1;
+    font-weight:
+        700;
+
+    color:
+        #E7E8E1;
 }
 
+
 .pixel-art-info p {
-    margin: 0;
+    margin:
+        0;
 
-    color: #969AAA;
+    color:
+        #969AAA;
 
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size:
+        0.9rem;
+
+    line-height:
+        1.6;
 }
 
 
@@ -4979,39 +4878,58 @@ footer {
    ========================================================= */
 
 .pixel-art-link {
-    display: inline-block;
+    display:
+        inline-block;
 
-    margin-top: 20px;
+    margin-top:
+        20px;
 
-    font-family: monospace;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
+    font-family:
+        monospace;
 
-    color: #D9D9D2;
+    font-size:
+        0.75rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.1em;
+
+    color:
+        #D9D9D2;
 
     transition:
         color 0.2s ease,
         transform 0.2s ease;
 }
 
+
 .pixel-art-card:hover .pixel-art-link {
-    color: #8FA2FF;
-    transform: translateX(4px);
+    color:
+        #8FA2FF;
+
+    transform:
+        translateX(4px);
 }
 
 
 /* =========================================================
-   CRT DETAIL
+   PIXEL ART CRT DETAIL
    ========================================================= */
 
 .pixel-art-card::after {
-    content: "";
+    content:
+        "";
 
-    position: absolute;
-    inset: 0;
+    position:
+        absolute;
 
-    pointer-events: none;
+    inset:
+        0;
+
+    pointer-events:
+        none;
 
     background:
         repeating-linear-gradient(
@@ -5022,57 +4940,69 @@ footer {
             transparent 4px
         );
 
-    opacity: 0.35;
+    opacity:
+        0.35;
 }
 
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
 
 @media (max-width: 800px) {
 
     .pixel-art-grid {
-        grid-template-columns: 1fr;
-        gap: 22px;
+        grid-template-columns:
+            1fr;
+
+        gap:
+            22px;
     }
+
 
     .pixel-art-info {
-        padding: 20px;
+        padding:
+            20px;
     }
-
 }
+
 
 @media (max-width: 480px) {
 
     .pixel-art-grid {
-        margin-top: 28px;
+        margin-top:
+            28px;
     }
+
 
     .pixel-art-image {
-        aspect-ratio: 4 / 3;
+        aspect-ratio:
+            4 / 3;
     }
+
 
     .pixel-art-info h3 {
-        font-size: 1.2rem;
+        font-size:
+            1.2rem;
     }
+
 
     .pixel-art-info p {
-        font-size: 0.85rem;
+        font-size:
+            0.85rem;
     }
-
 }
+
 
 /* =========================================================
    ANIMATED SPRITES PAGE
    ========================================================= */
 
-   .pixel-gallery-section {
-    position: relative;
+.pixel-gallery-section {
+    position:
+        relative;
 }
 
+
 .pixel-gallery-section .section-container {
-    max-width: 1200px;
+    max-width:
+        1200px;
 }
 
 
@@ -5081,27 +5011,42 @@ footer {
    ========================================================= */
 
 .pixel-gallery-back {
-    display: inline-block;
+    display:
+        inline-block;
 
-    margin-bottom: 36px;
+    margin-bottom:
+        36px;
 
-    color: #8FA2FF;
+    color:
+        #8FA2FF;
 
-    font-family: monospace;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
+    font-family:
+        monospace;
 
-    text-decoration: none;
+    font-size:
+        0.75rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.1em;
+
+    text-decoration:
+        none;
 
     transition:
         color 0.2s ease,
         transform 0.2s ease;
 }
 
+
 .pixel-gallery-back:hover {
-    color: #D9D9D2;
-    transform: translateX(-4px);
+    color:
+        #D9D9D2;
+
+    transform:
+        translateX(-4px);
 }
 
 
@@ -5110,48 +5055,82 @@ footer {
    ========================================================= */
 
 .pixel-gallery-section h1 {
-    margin: 0 0 16px;
+    margin:
+        0 0 16px;
 
-    font-size: clamp(2.4rem, 5vw, 4.5rem);
-    line-height: 1;
+    font-size:
+        clamp(2.4rem, 5vw, 4.5rem);
 
-    color: #E7E8E1;
+    line-height:
+        1;
+
+    color:
+        #E7E8E1;
 }
+
 
 .pixel-gallery-section .section-description {
-    max-width: 700px;
+    max-width:
+        700px;
 }
 
 
 /* =========================================================
-   ANIMATED SPRITE GRID
+   ANIMATED SPRITE LIST
    ========================================================= */
 
-.animated-sprite-grid {
-    display: grid;
+.animated-sprite-list {
+    display:
+        grid;
 
     grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        repeat(3, minmax(0, 1fr));
 
-    gap: 28px;
+    gap:
+        24px;
 
-    margin-top: 48px;
+    margin-top:
+        48px;
 }
 
 
 /* =========================================================
-   SPRITE CARD
+   SQUARE SPRITE CARD
    ========================================================= */
 
-.animated-sprite-card {
-    position: relative;
+.animated-sprite {
+    position:
+        relative;
 
-    overflow: hidden;
+    display:
+        flex;
 
-    background: #11152A;
+    align-items:
+        center;
 
-    border: 2px solid #303652;
-    border-radius: 8px;
+    justify-content:
+        center;
+
+    width:
+        100%;
+
+    aspect-ratio:
+        1 / 1;
+
+    padding:
+        20px;
+
+    background:
+        #11152A;
+
+    border:
+        2px solid #303652;
+
+    border-radius:
+        6px;
+
+    overflow:
+        hidden;
 
     transition:
         transform 0.2s ease,
@@ -5159,111 +5138,76 @@ footer {
         box-shadow 0.2s ease;
 }
 
-.animated-sprite-card:hover {
-    transform: translateY(-5px);
 
-    border-color: #7B8FE8;
+.animated-sprite:hover {
+    transform:
+        translateY(-4px);
+
+    border-color:
+        #7B8FE8;
 
     box-shadow:
-        0 8px 0 rgba(0, 0, 0, 0.25),
-        0 0 20px rgba(123, 143, 232, 0.15);
+        0 8px 0 rgba(0,0,0,0.25),
+        0 0 20px rgba(123,143,232,0.15);
 }
 
 
 /* =========================================================
-   SPRITE PREVIEW
+   SPRITE IMAGE
    ========================================================= */
 
-.animated-sprite-preview {
-    width: 100%;
+.animated-sprite img {
+    display:
+        block;
 
-    aspect-ratio: 16 / 10;
+    width:
+        100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height:
+        100%;
 
-    overflow: hidden;
+    max-width:
+        100%;
 
-    background:
-        linear-gradient(
-            135deg,
-            #171B32,
-            #0D1020
-        );
+    max-height:
+        100%;
 
-    border-bottom: 2px solid #303652;
+    object-fit:
+        contain;
+
+    image-rendering:
+        pixelated;
+
+    image-rendering:
+        crisp-edges;
+
+    transition:
+        transform 0.25s ease;
 }
 
-.animated-sprite-preview img {
-    width: 100%;
-    height: 100%;
 
-    object-fit: contain;
-
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
-
-    transition: transform 0.25s ease;
-}
-
-.animated-sprite-card:hover
-.animated-sprite-preview img {
-    transform: scale(1.04);
+.animated-sprite:hover img {
+    transform:
+        scale(1.04);
 }
 
 
 /* =========================================================
-   SPRITE INFORMATION
+   SPRITE CRT SCANLINES
    ========================================================= */
 
-.animated-sprite-info {
-    padding: 24px;
-}
+.animated-sprite::after {
+    content:
+        "";
 
-.animated-sprite-type {
-    display: inline-block;
+    position:
+        absolute;
 
-    margin-bottom: 8px;
+    inset:
+        0;
 
-    color: #8FA2FF;
-
-    font-family: monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-
-    letter-spacing: 0.14em;
-}
-
-.animated-sprite-info h2 {
-    margin: 0 0 10px;
-
-    color: #E7E8E1;
-
-    font-size: 1.35rem;
-}
-
-.animated-sprite-info p {
-    margin: 0;
-
-    color: #969AAA;
-
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   CRT SCANLINES
-   ========================================================= */
-
-.animated-sprite-card::after {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    pointer-events: none;
+    pointer-events:
+        none;
 
     background:
         repeating-linear-gradient(
@@ -5274,217 +5218,100 @@ footer {
             transparent 4px
         );
 
-    opacity: 0.35;
+    opacity:
+        0.35;
 }
 
 
 /* =========================================================
-   FOOTER
-   ========================================================= */
-
-.site-footer {
-    padding: 40px 20px;
-
-    text-align: center;
-
-    color: #696D80;
-
-    font-family: monospace;
-    font-size: 0.75rem;
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 800px) {
-
-    .animated-sprite-grid {
-        grid-template-columns: 1fr;
-        gap: 22px;
-        margin-top: 36px;
-    }
-
-    .animated-sprite-info {
-        padding: 20px;
-    }
-
-}
-
-
-@media (max-width: 480px) {
-
-    .pixel-gallery-back {
-        margin-bottom: 28px;
-    }
-
-    .pixel-gallery-section h1 {
-        font-size: 2.4rem;
-    }
-
-    .pixel-gallery-section .section-description {
-        font-size: 0.9rem;
-    }
-
-    .animated-sprite-preview {
-        aspect-ratio: 4 / 3;
-    }
-
-    .animated-sprite-info h2 {
-        font-size: 1.15rem;
-    }
-
-    .animated-sprite-info p {
-        font-size: 0.85rem;
-    }
-
-}
-
-/* =========================================================
-   ANIMATED SPRITES PAGE
-   ========================================================= */
-
-   .pixel-gallery-section {
-    position: relative;
-}
-
-.pixel-gallery-section .section-container {
-    max-width: 1200px;
-}
-
-
-/* =========================================================
-   BACK LINK
-   ========================================================= */
-
-.pixel-gallery-back {
-    display: inline-block;
-
-    margin-bottom: 36px;
-
-    color: #8FA2FF;
-
-    font-family: monospace;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-
-    text-decoration: none;
-
-    transition:
-        color 0.2s ease,
-        transform 0.2s ease;
-}
-
-.pixel-gallery-back:hover {
-    color: #D9D9D2;
-    transform: translateX(-4px);
-}
-
-
-/* =========================================================
-   TITLE
-   ========================================================= */
-
-.pixel-gallery-section h1 {
-    margin: 0 0 16px;
-
-    font-size: clamp(2.4rem, 5vw, 4.5rem);
-    line-height: 1;
-
-    color: #E7E8E1;
-}
-
-.pixel-gallery-section .section-description {
-    max-width: 700px;
-}
-
-
-/* =========================================================
-   SPRITE LIST
-   ========================================================= */
-
-.animated-sprite-list {
-    display: grid;
-
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-
-    gap: 24px;
-
-    margin-top: 48px;
-}
-
-
-/* =========================================================
-   SPRITE
-   ========================================================= */
-
-.animated-sprite {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    min-height: 260px;
-
-    padding: 24px;
-
-    background: #11152A;
-
-    border: 2px solid #303652;
-    border-radius: 8px;
-
-    overflow: hidden;
-
-    transition:
-        transform 0.2s ease,
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.animated-sprite:hover {
-    transform: translateY(-4px);
-
-    border-color: #7B8FE8;
-
-    box-shadow:
-        0 8px 0 rgba(0, 0, 0, 0.25),
-        0 0 20px rgba(123, 143, 232, 0.15);
-}
-
-.animated-sprite img {
-    max-width: 100%;
-    max-height: 240px;
-
-    object-fit: contain;
-
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
-}
-
-
-/* =========================================================
-   MOBILE
+   ANIMATED SPRITES — TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
 
     .animated-sprite-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            20px;
     }
 
+
+    .animated-sprite {
+        padding:
+            18px;
+    }
 }
+
+
+/* =========================================================
+   ANIMATED SPRITES — PHONE
+   ========================================================= */
 
 @media (max-width: 600px) {
 
     .animated-sprite-list {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        margin-top: 32px;
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            14px;
+
+        margin-top:
+            32px;
     }
+
 
     .animated-sprite {
-        min-height: 240px;
+        padding:
+            14px;
+
+        border-radius:
+            5px;
+    }
+}
+
+
+/* =========================================================
+   ANIMATED SPRITES — VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .animated-sprite-list {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            10px;
     }
 
+
+    .animated-sprite {
+        padding:
+            10px;
+    }
+}
+
+
+/* =========================================================
+   SITE FOOTER
+   ========================================================= */
+
+.site-footer {
+    padding:
+        40px 20px;
+
+    text-align:
+        center;
+
+    color:
+        #696D80;
+
+    font-family:
+        monospace;
+
+    font-size:
+        0.75rem;
 }
